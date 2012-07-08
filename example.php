@@ -69,7 +69,7 @@ Registrar::register(array(
 // Checkout an instance of the Message class.
 $message = Registrar::checkout('Message', array('Hello!', 'Goodbye!')); 
 // Outputs: 	'Hello!'
-// 				'Goodbye!'
+// 		'Goodbye!'
 
 echo '<hr>';
 
@@ -113,9 +113,9 @@ Registrar::register(array(
 // Checkout an instance of the Messages_with_Status class.
 $messages = Registrar::checkout('Messages_with_Status', array('Hello!', 'Goodbye!')); 
 // Outputs: 	'Hello!'
-// 				'Goodbye!'
-// 				'Version 1.0'
-// 				'Copyright July 2012'
+// 		'Goodbye!'
+// 		'Version 1.0'
+// 		'Copyright July 2012'
 
 
 ?>
