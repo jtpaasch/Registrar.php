@@ -73,7 +73,7 @@ class Registrar {
      *          you want it to do. 
      */
     public static function register($options=null) {
-        if (empty($options['key']) || empty($options['checkout']) {
+        if (empty($options['key']) || empty($options['checkout'])) {
             return null;
         }
         $key = $options['key'];
