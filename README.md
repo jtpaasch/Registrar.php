@@ -9,7 +9,7 @@ The basic idea is that you register any classes you'd like to use in your projec
 Basic Usage
 --------------------
 
-The first step is to register a class with the Registrar. When you register a class, you need to tell the Registrar two things. First, you need to give the registrar a key (a unique name) to reference the class with, and second, you need to give the Registrar some code to execute whenever anyone tries to checkout an instance of the class. 
+The first step is to register a class with the Registrar. When you register a class, you need to tell the Registrar two things. First, you need to give the registrar a key (a unique name) to reference the class with, and second, you need to give the Registrar some code to execute whenever anyone tries to checkout an instance of the class (this will typically be code that instantiates and initializes the object). 
 
 For example, suppose we have a Message class that simply echos "Hello World!" when it's instantiated:
 
@@ -129,7 +129,7 @@ Injections
 
 You can also use the Registrar to inject further parameters into every instance of checkout code. 
 
-For example, suppose we want to add a version number and a copyright date to all checkouts. First we add them to the Registrars list of injections: 
+For example, suppose we want to add a version number and a copyright date to all checkouts. First we add them to the Registrar's list of injections: 
 
 ```php
 <?php
